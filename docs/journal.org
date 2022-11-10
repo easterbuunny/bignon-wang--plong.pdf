@@ -1,0 +1,33 @@
+<17/11/2021>
+* Sujet validé
+  Attention cependant aux points suivants
+  - Il y a deux fonctionnalités importantes à bien distinguer : la
+    reconnaissance par l'IA, et la génération d'images. Le second point est très
+    différent, et bien plus difficile.
+  - je ne recommande pas de développer une deuxième interface (android) ; ça
+    n'apporterait pas grand chose
+  - De même pour le support de plusieurs langues. Ajoutez plutôt des
+    fonctionnalités plus centrales dans l'application. Ou encore, découpez les
+    fonctionnalités principales en sous-tâches pour créer des objectifs
+    intermédiaires (e.g. la génération d'images est un gros morceau).
+
+<05/04/2022>
+ * FAIT:
+ - début d'implémentation de reconnaissance de dessins (en 28 x 28)
+ - début de l'interface graphique
+
+ * TODO:
+ - réfléchir à étoffer le projet (ne pas se limiter à l'entrainement d'un réseau de neurone)
+ - essayer de faire en sorte que l'ia essaie de s'adapter au style de dessin d'un joueur
+ - regarder comment encoder une image vectorielle en une image de taille fixe
+ - regarder la partie génération de dessin
+ - programmer la partie back du site
+
+<12/04/2022>
+* DONE
+  - génération d'image. modèle sketchRNN déjà entraîné
+  - backend implémenté avec des websockets
+* TODO
+  - utiliser git-lfs ou autre pour les gros fichiers
+  - implémenter ramer douglas pour lisser les dessins
+    voir s'il marche localement (en live)
